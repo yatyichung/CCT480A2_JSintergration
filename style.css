@@ -1,0 +1,619 @@
+/*
+Theme Name: Twenty Twenty Child Theme
+Theme URI: http://ccit655.firebird.sheridanc.on.ca/
+Description: CCT460 Project 1
+Author: Sunny Chung
+Template: twentytwenty
+Version: 0.1.0
+*/
+
+
+@import url("parent.css");
+
+
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 500px;
+		
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+
+
+.open-button {
+background-color:#ff954e!important;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 150px!important;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: -100px!important;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 80%;
+ padding: 10px 20px;
+  background-color: lightgrey;
+	
+
+	
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+.form-popup h1{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 2.5rem;
+	color: black;
+	margin-top:0px;
+}
+
+.form-popup p{
+	color: black;
+	font-size:1.2rem;
+}
+
+
+
+.site-title{
+  text-transform: uppercase;
+	color:#ff954e;
+	font-size: 4rem;
+}
+
+
+.site-title a:hover{
+  text-decoration: none;
+}
+
+
+
+
+.home h2{
+	color:#ff954e;
+}
+
+
+.home p, h4{
+	color:#808080;
+}
+
+.home .entry-header {
+ display:none;
+}
+
+.entry-content > .alignfull {
+   
+    margin-top: 0rem;
+}
+
+.header-inner{
+	padding:2.8rem 0 1rem 0;
+}
+
+.primary-menu li.current-menu-item a{
+	border-color: #808080;
+	padding: 0.5em;
+	border-top: double;
+	border-bottom: double;
+	text-decoration: none;
+	
+}
+
+
+ul.modal-menu a{
+	color: #ff954e;
+	text-transform: uppercase;
+}
+
+ul.modal-menu a:hover{
+background-color:#ff954e;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+
+
+li#menu-item-19 a, 
+li#menu-item-60 a,
+li#menu-item-21 a,
+li#menu-item-83 a,
+li#menu-item-22 a
+{
+	color: #808080;
+  text-transform: uppercase;
+	padding: 1em 0.5em ;
+}
+
+
+
+li#menu-item-19 a:hover, 
+li#menu-item-60 a:hover,
+li#menu-item-21 a:hover,
+li#menu-item-83 a:hover,
+li#menu-item-22 a:hover {
+   border-color: #808080;
+	padding: 0.5em;
+	border-top: double;
+	border-bottom: double;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+
+
+
+
+.home .wp-block-cover__inner-container .wp-block-button .wp-block-button__link {
+	color: #ff954e;
+}
+
+.home .wp-block-cover__inner-container .wp-block-button .wp-block-button__link:hover{
+	text-decoration:none;
+	border:none;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.home .wp-block-cover__inner-container h4{
+	font-size: 55px;
+}
+
+.home .wp-block-image {
+	max-width: 90%;
+}
+
+.home .wp-block-image:hover{
+	 opacity: 0.5;
+}
+
+
+
+.home .alignfull {
+	margin-bottom: 0rem;
+}
+
+
+.home .wp-block-cover__inner-container h3,
+.home .wp-block-quote p,
+.home .wp-block-quote cite{
+	color:#ffffff;
+}
+.home .wp-block-quote cite{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+
+.home .wp-block-column .wp-block-quote {
+	background-color: #808080;
+	padding: 70px 50px;
+	border-left-color: transparent;
+}
+
+.footer-widgets .widget-content p,
+.footer-widgets .widget-content a,
+.footer-widgets .widget-content li
+{
+	font-size: 20px;
+	color: #808080;
+	line-height: 0.8;
+	text-align: center;
+	font-family:  NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-weight: normal;
+}
+
+.footer-widgets .widget-content h2{
+		color: #808080;
+     font-size: 30px;
+		text-align: center;
+	line-height: 0.5;
+	font-family:  NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-weight: 600;
+
+	
+}
+.footer-widgets-outer-wrapper{
+	padding:3rem 0 3rem 0 ;
+}
+
+.footer-widgets .widget-content a:hover{
+	text-decoration: none;
+	color: #ff954e;
+}
+
+#site-footer {
+    padding: 1rem 0;
+}
+
+.footer-credits {
+	color: #808080;
+}
+
+.entry-title {
+	color: #808080;
+	font-size: 6rem;
+	  word-spacing: 20px;
+
+	
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff954e!important;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffc14e!important;
+	text-decoration: none;
+}
+
+textarea:focus, input[type=text]:focus{
+     border-color: #ffc14e;
+    outline: 0 none;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+	max-height: 100%;
+	
+}
+
+.singular .entry-header {
+    padding: 6rem 0;
+	
+}
+
+
+
+.contact h2{
+	    margin-top:0!important;
+	color:#808080;
+
+	
+}
+
+.contact-content p{
+	color: grey;
+	text-indent: 30px;
+	
+}
+
+.contact-content a{
+	text-decoration: none;
+	color: #ff954e;
+}
+
+.contact-content a:hover{
+	color:#ffc14e;
+}
+
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 100%;
+    
+}
+
+
+
+
+.megatron {
+	position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.megatron video {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+*{box-sizing:border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	border: 3px dashed #ff954e;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.column {
+  float: left;
+  height: auto; 
+
+}
+
+.slideshow-container h3,
+.slideshow-container p{
+	
+	color:#ffffff !IMPORTANT;
+}
+
+.left {
+  width: 25%;
+	padding-left:30px;
+	height: 450px;
+
+	
+}
+
+.right {
+  width: 75%;
+	max-height: 450px;
+	opacity: 0.5;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+	
+}
+
+#post-13 p{
+	color: grey;
+	text-indent: 30px;
+}
+
+article.post-13 h4{
+	margin-top:40px;
+}
+
+#post-59 .entry-header {
+ display:none;
+}
+
+#post-59 .entry-content {
+	margin-top:70px;
+}
+
+#post-59 h2{
+	color:#ff954e;
+}
+
+#post-59 p{
+	color:grey;
+	text-indent: 50px;
+}
+
+#post-59 img{
+	width: 180px;
+	height: 400px;
+}
+
+#post-59 .wp-block-separator{
+	color:#ff954e;
+}
+
+.post-57 .entry-title a,
+.post-15 .entry-title a,
+.post-17 .entry-title a,
+.post-1 .entry-title a
+{
+	color: grey;
+	font-size: 40px;
+}
+
+.post-57 .entry-title a:hover,
+.post-15 .entry-title a:hover,
+.post-17 .entry-title a:hover,
+.post-1 .entry-title a:hover
+{
+	color: #ff954e;
+	font-size:44px;
+	text-decoration: none;
+}
+
+.post-57 .entry-content p,
+.post-15 .entry-content p,
+.post-17 .entry-content p,
+.post-1 .entry-content p
+{
+	color:grey;
+	text-indent: 50px;
+}
+
+ .entry-categories-inner a
+{
+	color:#ff954e!important;
+	border-bottom:none;
+}
+
+
+
+.entry-categories-inner a:hover
+{
+	color:#ff954e;
+  border:0.15rem solid currentColor;
+}
+
+.pagination-single-inner a{
+	color:#ff954e;
+	text-decoration: none;
+}
+
+.archive-title,
+span.color-accent{
+	color:#ff954e!important;
+	text-decoration: #ff954e underline;
+}
+
+
